@@ -14,6 +14,6 @@ run apt-get update \
    && apt-get update \
    && apt-add-repository ppa:pwntools/binutils \
    && apt-get install -y binutils \
-   && pip install --upgrade pwntools \
+   && pip install --upgrade pwntools requests \
    && apt-get clean && rm -rf /var/lib/apt/lists/* 
 CMD bash
