@@ -1,0 +1,6 @@
+FROM ubuntu:14.04
+
+run apt-get update && apt-get upgrade -y \
+   && apt-get remove --purge -y $BUILD_PACKAGES $(apt-mark showauto) && rm -rf /var/lib/apt/lists/*\
+   && apt-get clean
+CMD bash
