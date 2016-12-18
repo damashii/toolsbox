@@ -1,0 +1,12 @@
+version: '2'
+services:
+  burp:
+    image: 'willlamb/toolsbox:burpsuite'
+    expose:
+     - '8080'
+    env_file: .env
+  firefox:
+    links: 
+     - burp
+    image: 'willlamb/firefox:tampermonkey'
+    env_file: .env
