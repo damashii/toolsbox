@@ -1,2 +1,2 @@
-Docker build files for pwntools and updated ubuntu 14.04 baseimage
+Docker build files for pwntools and updated ubuntu 16.04 baseimage
 
