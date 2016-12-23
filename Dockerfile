@@ -1,4 +1,4 @@
-FROM willlamb/toolsbox:baseimage
+FROM willlamb/toolsbox:baseimage16.04
 
 run apt-get update \
    && apt-get install -y \
